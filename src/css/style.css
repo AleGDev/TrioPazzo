@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@400;500;600;700&display=swap");
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif; }
+  body > * {
+    box-sizing: inherit; }
+
+.layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.header {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
+  padding: 1rem 4rem;
+  background-color: #5AB9EA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__logo {
+    width: 4rem;
+    height: 4rem;
+    z-index: 2;
+    transform: translateY(0);
+    transition: all .4s; }
+    .header__logo-text {
+      color: #fff;
+      font-size: 1.5rem;
+      letter-spacing: 0.2rem;
+      transform: translateX(-5rem);
+      letter-spacing: -0.5rem;
+      opacity: 0;
+      transition: all .4s; }
+  .header__logo-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+  .header__logo-box:hover .header__logo-text {
+    transform: translateX(0);
+    letter-spacing: 0.2rem;
+    opacity: 1; }
+  .header__logo-box:hover .header__logo {
+    transform: translateY(-0.5rem) scale(1.05); }
+  .header__links {
+    list-style: none;
+    display: flex;
+    gap: 4rem; }
+    .header__links a.active {
+      border-bottom: 3px solid #ECECEC;
+      color: #ECECEC; }
+      .header__links a.active svg {
+        fill: #ECECEC; }
+  .header__link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.2rem;
+    transition: all .2s, border-bottom 0s;
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .header__link:hover {
+      color: #eee;
+      transform: scale(1.2) translateY(-0.4rem) rotate(2deg); }
+    .header__link svg {
+      fill: #fff;
+      width: 2rem;
+      height: 2rem; }
+
+.footer {
+  box-shadow: 0 -1rem 3rem rgba(0, 0, 0, 0.25);
+  background-color: #5680E9;
+  padding: 3rem 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #5AB9EA;
+  gap: 3rem; }
+  .footer svg {
+    width: 3rem;
+    height: 3rem;
+    fill: #5AB9EA;
+    transition: all .4s; }
+    .footer svg:hover {
+      fill: #fff;
+      transform: scale(1.1) translateY(-0.5rem); }
+  .footer__socials {
+    display: flex;
+    justify-content: space-between;
+    width: 50%; }
+  .footer__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .footer__author {
+    color: #fff;
+    letter-spacing: 2px; }
+  .footer__copyright {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: -0.4rem; }
+  .footer__copyright-desc {
+    font-size: 1.2rem;
+    font-weight: 700; }
+
+.heading-1 {
+  font-family: "Oswald", sans-serif; }
+
+.heading-2 {
+  font-family: "Oswald", sans-serif; }
+
+.heading-3 {
+  font-family: "Oswald", sans-serif; }
+
+.heading-4 {
+  font-family: "Oswald", sans-serif; }
+
+.home {
+  background-image: url(../img/meetthepillager.jpg);
+  background-size: cover; }
