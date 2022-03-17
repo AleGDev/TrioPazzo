@@ -1,17 +1,69 @@
 
+@mixin heading {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .heading-1 {
-    font-family: "Oswald", sans-serif;
+    @include heading();
+    font-weight: 700;
+    font-size: 6rem;
+    letter-spacing: 1px;
+
+    &--white {
+        color: #fff;
+    }
+    &--blue {
+        color: $color-secondary;
+    }
+    &--blue-dark {
+        color: $color-secondary-dark;
+    }
+    &--black {
+        color: #000;
+    }
 }
 
 .heading-2 {
-    font-family: "Oswald", sans-serif;
+    @include heading();
+
+    &--white {
+        color: #fff;
+    }
+    &--blue {
+        color: $color-secondary;
+    }
+    &--black {
+        color: #000;
+    }
 }
 
 .heading-3 {
-    font-family: "Oswald", sans-serif;
+    @include heading();
+
+    &--white {
+        color: #fff;
+    }
+    &--blue {
+        color: $color-secondary;
+    }
+    &--black {
+        color: #000;
+    }
 }
 
 
 .heading-4 {
-    font-family: "Oswald", sans-serif;
+    @include heading();
+
+    &--white {
+        color: #fff;
+    }
+    &--blue {
+        color: $color-secondary;
+    }
+    &--black {
+        color: #000;
+    }
 }

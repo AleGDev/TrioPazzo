@@ -28,6 +28,7 @@ const Header = () => {
                 <li><NavLink className="header__link" to="/discordate" >{headerLink("typing", "Discordate")}</NavLink></li>
                 <li><NavLink className="header__link" to="/eventi" >{headerLink("megaphone", "Eventi")}</NavLink></li>
                 <li><NavLink className="header__link" to="/roba" >{headerLink("cog", "Roba")}</NavLink></li>
+                <li><NavLink className="header__link" to="/gallery" >{headerLink("cog", "Gallery")}</NavLink></li>
             </ul>
         </header>
     )

@@ -6,6 +6,7 @@ import Wrapper from "./components/Wrapper"
 
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound";
+import Discordate from "./pages/Discordate";
 
 import "./css/style.css"
 
@@ -15,6 +16,7 @@ const App = () => {
             <Routes>
                 <Route path="*" element={ <NotFound /> } />
                 <Route path="/" element={ <Home /> } />
+                <Route path="/discordate" element={ <Discordate /> } />
             </Routes>
         </Wrapper>
     );
